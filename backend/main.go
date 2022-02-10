@@ -28,8 +28,8 @@ func incrementCounter(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
-	DownloadLZTemplate()
-	ConnectGithub()
+	// DownloadLZTemplate()
+	// ConnectGithub()
 	http.Handle("/", http.FileServer(http.Dir("./frontend")))
 	// http.HandleFunc("/increment", incrementCounter)
 
